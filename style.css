@@ -9,10 +9,12 @@ header{
     align-items: center;
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
+    height: 50px;
 
 }
 .logo img{
     height: 50px;
+    margin-left: 20px;
 }
 .titulo{
     flex-grow: 1;
@@ -40,6 +42,24 @@ header{
 .navbar ul li a:hover{
     color: #007bff;
 }
+main{
+    text-align: center;
+    color: #ddd;
+    align-items: center;
+}
+main ul li{
+    list-style: none;
+}
+main img{
+    height: 500px;
+    border-radius: 50px;
+    
+}
+.sin{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 footer{
     display: flex;
@@ -49,10 +69,39 @@ footer{
     background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
     bottom: 0;
-    position:fixed;
+    position:relative;
     width: 100%;
+    height: 50px;
 }
 footer h1{
     flex-grow: 1;
     text-align: center;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 40px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
